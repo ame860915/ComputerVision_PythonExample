@@ -1,0 +1,29 @@
+from PIL import Image
+from pylab import * 
+import matplotlib.pyplot as plt
+
+plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
+plt.rcParams['axes.unicode_minus'] = False
+
+#打開圖形，並轉換成灰階圖形
+im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+#新建一個圖形
+figure()
+subplot(121)
+#不使用顏色資訊
+gray()
+#-----------------------------------------
+#在原點的左上角標示輪廓圖形
+contour(im, origin='image')
+axis('equal')
+axis('off')
+title(u'圖形輪廓圖')
+
+subplot(122)
+#-----------------------------------------
+hist(im.flatten(), 128)
+title(u'圖形長條圖')
+#刻度
+plt.xlim([0,250])
+plt.ylim([0,2000])
+show()

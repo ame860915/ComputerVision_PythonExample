@@ -1,0 +1,7 @@
+{
+        "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "editor.fontLigatures": false,
+    "editor.fontSize": 16,
+    "editor.mouseWheelZoom": true,
+    "python.analysis.completeFunctionParens": true
+}

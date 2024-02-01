@@ -1,0 +1,9 @@
+from PIL import Image
+from pylab import * 
+
+im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp"))
+imshow(im)
+print('請點擊3個點')
+x = ginput(3)
+print('你以點擊：', x)
+show()  #在顯示的圖形中點擊3個點
