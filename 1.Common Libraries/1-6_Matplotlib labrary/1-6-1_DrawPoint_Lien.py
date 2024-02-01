@@ -6,7 +6,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
 plt.rcParams['axes.unicode_minus'] = False
 
 #讀取圖形至陣列中
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp"))
+im = array(Image.open(r"Lenna.bmp"))
 figure()
 
 #繪製座標軸

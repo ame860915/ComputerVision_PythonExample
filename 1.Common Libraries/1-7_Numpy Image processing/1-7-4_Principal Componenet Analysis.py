@@ -15,7 +15,7 @@ def pca(X):
         #PCA - 使用繁致技巧
         M = dot(X, X.T)     #協方差矩陣
         e, EV = linalg.eigh(M)  #特徵值和特徵向量
-        tmp = dot(X.T, EV).T    #**這就是緊致技巧**
+        temp = dot(X.T, EV).T    #**這就是緊致技巧**
         V = temp[::-1]          #由於最後的特徵向量是我們所需要的，所以需要將其逆轉
         S = sqrt(e)[::-1]       #由於特徵值是按照遞增順序排列的，所以需要將其逆轉
         for i in range(V.shape[1]): 

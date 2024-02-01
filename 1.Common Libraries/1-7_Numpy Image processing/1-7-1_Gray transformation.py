@@ -2,7 +2,7 @@ from PIL import Image
 from numpy import * 
 from pylab import * 
 
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 im2 = 255 - im
 print('對圖形進行反向處理:\n', int(im2.min()), int(im2.max()))  #查看最大最小元素
 

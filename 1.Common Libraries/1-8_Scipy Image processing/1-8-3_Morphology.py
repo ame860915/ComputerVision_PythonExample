@@ -16,7 +16,7 @@ plt.rcParams['axes.unicode_minus'] = False
 #載入圖型和閾值，以確保它是二進位
 figure()
 gray()
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 subplot(221)
 imshow(im)
 axis('off')

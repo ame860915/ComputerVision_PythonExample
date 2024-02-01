@@ -12,7 +12,7 @@ from PCV.tools import rof
 plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
 plt.rcParams['axes.unicode_minus'] = False
 
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 U, T  = rof.denoise(im, im)
 G = gaussian_filter(im, 10)
 

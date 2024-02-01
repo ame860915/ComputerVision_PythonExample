@@ -9,7 +9,7 @@ import matplotlib.pyplot as plt
 plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
 plt.rcParams['axes.unicode_minus'] = False
 
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 #打開圖形，並轉成灰階圖形
 im2,cdf = imtools.histeq(im)
 figure()

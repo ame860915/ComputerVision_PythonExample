@@ -32,5 +32,5 @@ def transimg(img_path):
         return False
     
 if __name__ == "__main__":
-    img_path = (r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp")
+    img_path = (r"Lenna.bmp")
     print(transimg(img_path))

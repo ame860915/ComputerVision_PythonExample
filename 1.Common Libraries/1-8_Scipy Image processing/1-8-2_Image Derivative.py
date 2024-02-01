@@ -10,7 +10,7 @@ import numpy
 plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
 plt.rcParams['axes.unicode_minus'] = False
 
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 gray()
 subplot(141)
 suptitle('導數操作(Sobel)', fontsize=16)
@@ -56,7 +56,7 @@ def Mag(im, sigma):
     imgmag = 255 - numpy.sqrt(imgx**2 + imgy**2)
     return imgmag
 
-im = array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp").convert('L'))
+im = array(Image.open(r"Lenna.bmp").convert('L'))
 figure()
 gray()
 sigma = [2, 5, 10]

@@ -103,7 +103,7 @@ def add_salt_noise(img):
 
 
 def main():
-    img = np.array(Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp"))   #匯入圖片
+    img = np.array(Image.open(r"Lenna.bmp"))   #匯入圖片
     add_salt_noise(img)
 
 if __name__ == '__main__':

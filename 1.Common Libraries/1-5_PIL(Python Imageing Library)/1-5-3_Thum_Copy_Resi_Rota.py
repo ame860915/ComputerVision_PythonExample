@@ -4,7 +4,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei'] #顯示中文標籤
 plt.rcParams['axes.unicode_minus'] = False
 figure()
 #顯示原圖
-pil_im = Image.open(r"D:\pyrhon_test\1.Common Libraries\Lenna.bmp")
+pil_im = Image.open(r"Lenna.bmp")
 print(pil_im.mode, pil_im.size,pil_im.format)
 subplot(231)
 title(u'原圖') 
@@ -28,7 +28,7 @@ subplot(234)
 title(u'縮圖')
 axis('off')
 imshow(pil_im_Thum)
-#pil_im_Thum.save(r'D:\pyrhon_test\1.Common Libraries\1-5_PIL(Python Imageing Library)\Lenna_Thum.bmp') #
+#pil_im_Thum.save(r'Lenna_Thum.bmp') #
 #-----------------------------------------------
 #複製並貼上區域
 pil_im_Copy = pil_im.copy()

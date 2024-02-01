@@ -92,7 +92,7 @@ def defog(img, t_map, air, h, w):
     return dehaze_img
 
 if __name__ == '__main__':
-    img = Image.open(r"D:\pyrhon_test\1.Common Libraries\Fog_image.jpg")
+    img = Image.open(r"Fog_image.jpg")
     img.show()
     [h, w] = img.size
     #print(h,w)
